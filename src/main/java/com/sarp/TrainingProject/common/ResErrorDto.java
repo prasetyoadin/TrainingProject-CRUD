@@ -17,7 +17,7 @@ public class ResErrorDto {
 	
 	public ResErrorDto(String error) {
 		if (error.contains("|")) {
-			this.listError = new ArrayList<String>();
+			this.listError = new ArrayList<>();
 			String[] errors = error.split("\\|");
 			for (String value : errors) {
 				this.listError.add(value);
